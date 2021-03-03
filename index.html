@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <head>
-        <title>Bootstrap Example</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,162 +16,193 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
-        .section1 {
-            background-image: url("b.jpg");
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+
+        * {
+            box-sizing: border-box;
         }
-        
-        #section2 {
-            height: 100%;
+
+        .container {
+            padding: 50px;
         }
-        
-        .popup {
-            margin: auto;
-            width: 50%;
-            height: 70%;
-            /* border: 3px solid black; */
-            /* padding-top: 90px; */
+
+        .img_circle {
+            background: lightblue;
+            border-radius: 50%;
+            width: 230px;
+            height: 230px;
+            margin: 15px 0px 15px 0px;
+        }
+
+        .side-menu {
+            margin: 55px 0px 0px 0px;
+        }
+
+        span {
+            border: solid black 1px;
+            border-radius: 100%;
+            padding: 10px;
+        }
+
+        .fa {
+            min-width: 60px;
             text-align: center;
-            color: rgb(141, 137, 137);
-            /* position: relative; */
-            /* -moz-box-shadow: inset 10px 10px 50px rgb(70, 64, 64);
-            -webkit-box-shadow: inset 10px 10px 50px rgb(70, 67, 67);
-            box-shadow: inset 10px 10px 50px rgb(70, 68, 68); */
         }
-        
-        a:visited {
-            background-color: #948e8d;
-            color: rgb(141, 137, 137);
-            padding: 14px 25px;
-            text-align: center;
-            text-decoration: rgb(247, 244, 244);
-            display: inline-block;
-            border: 1px solid rgb(138, 137, 137);
-        }
-        
-        a:hover,
-        a:active {
-            color: rgb(240, 238, 238);
-        }
-        
-        #icons {
-            font-size: 20px;
-            padding: 20px 10px;
-        }
-        
-        .button {
-            border: 1px solid rgb(179, 175, 175);
-            color: white;
-            padding: 9px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        
-        .button:hover,
-        .button:active {
-            background-color: rgb(141, 137, 137);
-            color: rgb(240, 238, 238);
-        }
-        
-        p {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 20px
-        }
-        
-        ul {
-            height: 3em;
-            padding-right: 43px;
-            width: 100%;
-        }
-        
-        li {
-            display: inline;
+        @media only screen and (max-width: 1026px) {
+            .side-menu {
+                display: none;
+            }
         }
     </style>
-    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
-    <script>
-        $(function() {
-            var messages = [],
-                index = 0;
-
-            messages.push('“ Code is like humor. When you have to explain it, it’s bad.” – Cory House');
-            messages.push('“First, solve the problem. Then, write the code.” – John Johnson');
-            messages.push('Experience is the name everyone gives to their mistakes.” – Oscar Wilde');
-
-            function cycle() {
-                $('#msg').html(messages[index]);
-                index++;
-
-                if (index === messages.length) {
-                    index = 0;
-                }
-
-                setTimeout(cycle, 3000);
-            }
-
-            // cycle();
-        });
-    </script>
-
 </head>
 
 <body>
-    <div class="section1">
 
-        <head>
-            <nav class="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" style="background-color:yellow;">
+                <div class="text-center">
+                    <img src="pic.jpg" class="img_circle" alt="Cinque Terre">
+                </div>
+                <div class="side-menu">
+                    <h4>Personal</h4>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i>081 077 2012</div>
 
-            </nav>
-        </head>
-        <div class="popup row">
-            <div class="bnr-txt-w3pvt mt-sm-5">
-                <h2>
-                    <span>Maipato Nkebenyane</span>
-                </h2>
-                <h4>
-                    Developer_
-                </h4>
-                <p class="mt-4">
-                    “Reusability is key in reducing bugs and coding quickly. The more I use a piece of code, the more confident and familiar I become with it, which in turn significantly speeds up my development time.”
-                </p>
-                <ul class="social-icons mt-4">
-                    <li>
-                        <a href="https://github.com/Nkebenyane">
-                            <span id="icons" class="md-2 fa fa-github"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span id="icons" class="mb-2 fa fa-google"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span id="icons" class="mb-2 fa fa-instagram"></span>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#section2" class="button scroll bnr-btn">READ MORE</a>
+                    <div><i class="fa fa-envelope-o" aria-hidden="true"></i>nkebenyane92@gmail.com</div>
+
+                    <p><i class="fa fa-github" aria-hidden="true"></i>
+                        <a href="https://github.com/Nkebenyane">https://github.com/Nkebenyane</a>
+                    </p>
+                </div>
+
+                <div class="side-menu text-center">
+                    <p>favorite quotes</p>
+
+                    <p>“Reusability is key in reducing bugs and coding quickly. The more I use a piece of code, the
+                        more confident and familiar I become with it, which in turn significantly speeds up my
+                        development time.”</p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h1>MAIPATO NKEBENYANE</h1>
+                <h4>IT Developer </h4>
+                <p>I have a clear, logical mind with a practical approach to problem-solving and a drive to see things
+                    through to completion. I have strong technical skills as well as excellent interpersonal skills,
+                    that enabling me to interact with others. I am eager to be challenged in order to grow and further
+                    improve my IT skills. My greatest passion in life is using my technical skills to benefit other
+                    people and organizations.</p>
+                <hr>
+                <h4><span class="glyphicon glyphicon-briefcase"></span> WORK EXPERIANCE</h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5>May 2020 - Precent</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Freelance (Web Developer)</h4>
+                        <h5><i class="fa fa-building" aria-hidden="true"></i> Self Employed</h5>
+                        <p>As a freelance developer, I have been building websites for clients based on their
+                            specifications and also offering maintenance services. in most cases I use HTML, CSS,
+                            JavaScript, PHP and MySql.my work include Integrating data from various back-end services
+                            and databases, gather and refine specifications and requirements based on technical needs.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Feb 2019 - Precent</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>IT Dveloper</h4>
+                        <h5><i class="fa fa-building" aria-hidden="true"></i> American Tower</h5>
+                        <ul>
+                            <li>Testing software and fixing problems.</li>
+                            <li>Maintaining systems once they are up and running.</li>
+                            <li>Being a part of technical designing.</li>
+                            <li>Integrate software components</li>
+                            <li> Verify and gather source data to be imported specifications and requirements based on
+                                technical needs.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Sep 2017 – Jan 2018</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Coding Coordinator</h4>
+                        <h5><i class="fa fa-building" aria-hidden="true"></i> Code for Change</h5>
+                        <p>Teaching high school learners how to code, helping them to understand all the basic of CSS
+                            and HTML using the CodeJika platform.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h4><span class="glyphicon glyphicon-education"></span></span> EDUCATION</h4>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5>Feb 2018 – May 2020</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Higher Certificate in Software Engineering (NQF5)</h4>
+                        <h5>WeThinkCode_</h5>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Jan 2017 – Jan 2018</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>National Certificate: Information Technology (Systems Support) NQF5</h4>
+                        <h5>Gijima</h5>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h5>Jan 2015 – Dec 2015</h5>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>NCV Level 4 Information Technology and Computer Science</h4>
+                        <h5>Ekurhuleni West College</h5>
+                    </div>
+                </div>
+                <hr>
+                <h4><span class="glyphicon glyphicon-briefcase"></span> TOP SKILLS</h4>
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">88%</div>
+                </div>
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">92%</div>
+                </div>
+                <p>Javascript</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                <p>React</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">67%</div>
+                </div>
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+                <p>java</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+                <p>PHP</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">46%</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="section2" class="container-fluids">
-        <div>
 
-        </div>
-        <h2>Hello</h2>
     </div>
 </body>
 
