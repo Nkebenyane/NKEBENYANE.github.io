@@ -40,7 +40,7 @@
             margin: 55px 0px 0px 0px;
         }
 
-        span {
+        .menu-icon {
             border: solid black 1px;
             border-radius: 100%;
             padding: 10px;
@@ -50,11 +50,22 @@
             min-width: 60px;
             text-align: center;
         }
+
         @media only screen and (max-width: 1026px) {
             .side-menu {
                 display: none;
             }
+            .footer-section {
+                background-color: yellow;
+                padding: 10px;
+            }
         }
+        @media screen and (min-width:701px) and (max-width: 1600px) {
+            .footer-section {
+                display: none;
+            }
+         }
+      
     </style>
 </head>
 
@@ -94,7 +105,7 @@
                     improve my IT skills. My greatest passion in life is using my technical skills to benefit other
                     people and organizations.</p>
                 <hr>
-                <h4><span class="glyphicon glyphicon-briefcase"></span> WORK EXPERIANCE</h4>
+                <h4><span class="menu-icon glyphicon glyphicon-briefcase"></span> WORK EXPERIANCE</h4>
                 <div class="row">
                     <div class="col-sm-3">
                         <h5>May 2020 - Precent</h5>
@@ -137,7 +148,7 @@
                     </div>
                 </div>
                 <hr>
-                <h4><span class="glyphicon glyphicon-education"></span></span> EDUCATION</h4>
+                <h4><span class="menu-icon glyphicon glyphicon-education"></span></span> EDUCATION</h4>
                 <div class="row">
                     <div class="col-sm-3">
                         <h5>Feb 2018 – May 2020</h5>
@@ -164,7 +175,7 @@
                     </div>
                 </div>
                 <hr>
-                <h4><span class="glyphicon glyphicon-briefcase"></span> TOP SKILLS</h4>
+                <h4><span class=" menu-icon glyphicon glyphicon-briefcase"></span> TOP SKILLS</h4>
                 <p>CSS</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="25"
@@ -201,8 +212,31 @@
                         aria-valuemin="0" aria-valuemax="100">46%</div>
                 </div>
             </div>
-        </div>
+             <footer class="footer-section">
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h4>Personal</h4>
+                        <div><i class="fa fa-phone" aria-hidden="true"></i>081 077 2012</div>
 
+                        <div><i class="fa fa-envelope-o" aria-hidden="true"></i>nkebenyane92@gmail.com</div>
+
+                        <p><i class="fa fa-github" aria-hidden="true"></i>
+                            <a href="https://github.com/Nkebenyane">https://github.com/Nkebenyane</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-7 text-center">
+                        <h4>favorite quotes</h4>
+
+                        <p>“Reusability is key in reducing bugs and coding quickly. The more I use a piece of code, the
+                            more confident and familiar I become with it, which in turn significantly speeds up my
+                            development time.”</p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </footer>
+        </div>
+       
     </div>
 </body>
 
