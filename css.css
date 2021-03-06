@@ -1,3 +1,5 @@
+
+
 .jumbotron {
 
   background-image: url('e.jpg');
@@ -5,24 +7,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: -76px;
+  /* opacity: 0.5; */
   /* font-weight: bold; */
-
-}
-
-
-#overlapthis {
-  width: auto;
-	height: 200px;
-	/* background-color: red; */
-	
-	/* position: absolute; */
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  	
-	margin: auto;
-
 
 }
 
@@ -82,8 +69,8 @@
   max-width: 220px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1);
-  
+  /* box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
   /* object-position: center right; */
 }
 .team-content .title{
@@ -195,6 +182,10 @@ ul{
   color: #b9b4b4;
 }
 
+.w3-container{
+  height: 10px;
+}
+
 .projects{
   padding: 40px;
   /* background-image: url('y.jpg'); */
@@ -260,4 +251,31 @@ ul{
   color:#FBB404;
 }
 
+
+.card {
+ 
+  background-color: white;
+	border: none;
+
+}
+
+
+
+.image {
+
+    overflow: hidden;
+  
+    transform: scale(.9) translateY(-6.8rem);
+}
+
+.card-block{
+  overflow: hidden;
+  transform: scale(.9) translateY(-6.8rem);
+}
+
+.name{
+  color: #FBB404;
+  font-weight: bold;
+  font-size: 30px;
+}
 
