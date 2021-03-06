@@ -7,12 +7,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -76px;
+  margin-bottom: -90px;
   /* opacity: 0.5; */
   /* font-weight: bold; */
 
 }
-
+.nav{
+  padding: 30px;
+}
 .personal {
   background-color: #FBB404;
   border-radius: 5px;
@@ -254,7 +256,7 @@ ul{
 
 .card {
  
-  background-color: white;
+  /* background-color: white; */
 	border: none;
 
 }
@@ -265,12 +267,12 @@ ul{
 
     overflow: hidden;
   
-    transform: scale(.9) translateY(-6.8rem);
+    /* transform: scale(.9) translateY(-6.8rem); */
 }
 
 .card-block{
   overflow: hidden;
-  transform: scale(.9) translateY(-6.8rem);
+  /* transform: scale(.9) translateY(-6.8rem); */
 }
 
 .name{
