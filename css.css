@@ -1,20 +1,23 @@
 
-
 .jumbotron {
-
   background-image: url('e.jpg');
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -90px;
-  /* opacity: 0.5; */
-  /* font-weight: bold; */
-
 }
 .nav{
-  padding: 20px;
+  padding-top: 90px;
+  font-weight: bold;
+
 }
+
+.nav a:hover{
+  color: #FBB404;
+  border-radius: 5px;
+}
+
 .personal {
   background-color: #FBB404;
   border-radius: 5px;
@@ -118,7 +121,9 @@ padding: 10px;
   font-weight: bold;
 }
 
-
+.job-title{
+  padding: 10px;
+}
 ul{
   list-style-type: circle;
   font-size:15px
@@ -192,6 +197,8 @@ ul{
   padding: 40px;
   /* background-image: url('y.jpg'); */
 }
+
+
 
 .counter
 {
