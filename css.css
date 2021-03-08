@@ -5,7 +5,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -90px;
+  margin-bottom: -130px;
+  overflow:auto;
 }
 .nav{
   padding-top: 90px;
@@ -21,9 +22,11 @@
 .personal {
   background-color: #FBB404;
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
   color: #ffffff;
+  overflow:auto;
 }
+
 
 .single-cta i {
   float: left;
@@ -53,6 +56,7 @@
 
 .download-btn {
   padding-top: 20px;
+  margin: 0px auto;
 }
 
 .btn {
@@ -69,15 +73,7 @@
   /* position: static; */
 }
 
-.image--cover {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  /* box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
-  /* object-position: center right; */
-}
+
 .team-content .title{
   color:#FBB404;
   font-weight: bold;
@@ -261,30 +257,41 @@ ul{
 }
 
 
-.card {
- 
-  /* background-color: white; */
-	border: none;
-
-}
-
-
-
-.image {
-
-    overflow: hidden;
-  
-    /* transform: scale(.9) translateY(-6.8rem); */
-}
-
-.card-block{
-  overflow: hidden;
-  /* transform: scale(.9) translateY(-6.8rem); */
-}
-
 .name{
   color: #FBB404;
   font-weight: bold;
   font-size: 30px;
 }
 
+
+.card-img-top {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  margin-left: -130px;
+
+}
+
+.image--cover {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  margin-top: 20px;
+  padding-top: 150px;
+}
+
+@media only screen and (max-width: 1260px) {
+
+.jumbotron {
+  background-image: url('e.jpg');
+  height: 658px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-bottom: -10px; */
+}
+}
