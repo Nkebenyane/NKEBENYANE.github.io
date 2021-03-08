@@ -5,11 +5,11 @@
 
   .jumbotron {
     background-image: url('e.jpg');
-    height: 500px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -130px;
+    margin-bottom: -100px;
     /* overflow:auto; */
   }
   .nav{
@@ -477,9 +477,9 @@
     color: #b9b4b4;
   }
   
-  .w3-container{
+  /* .w3-container{
     height: 10px;
-  }
+  } */
   
   .projects{
     padding: 40px;
@@ -557,7 +557,7 @@
   
   /* .card-img-top {
     position: absolute;
-    top: -10px;
+    top: -100px;
     left: 50%;
     margin-left: -110px;
   } */
