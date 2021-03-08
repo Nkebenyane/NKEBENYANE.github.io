@@ -315,35 +315,36 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2021, All Right Reserved <a href="">Maipato Nkebenyane</a></p>
-                        </div>
+    </div>
+
+    <footer>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2021, All Right Reserved <a href="">Maipato Nkebenyane</a></p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <script>
-            $('.counter-count').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 5000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
+    <script>
+        $('.counter-count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 5000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
             });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    </div>
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
