@@ -11,7 +11,9 @@
     background-size: cover;
     margin-bottom: -100px;
     /* overflow:auto; */
+    
   }
+  
 /* Move to top button */
   #button {
     display: inline-block;
@@ -197,6 +199,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
+    box-shadow: 0 0 20px 3px #FBB404;
     border-radius: 100%;
   }
   
@@ -208,6 +211,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
+    box-shadow: 0 0 20px 3px #FBB404;
     border-radius: 100%;
   }
   .three h3::before {
@@ -218,6 +222,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
+    box-shadow: 0 0 20px 3px #FBB404;
     border-radius: 100%;
   }
   
