@@ -1,7 +1,7 @@
 
 
-/* If the screen size is 601px or more,*/
-@media only screen and (min-width: 601px) {
+/* If the screen size is 701px or more,*/
+@media only screen and (min-width: 701px) {
 
   .jumbotron {
     background-image: url('e.jpg');
@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
     /* overflow:auto; */
     
   }
@@ -331,8 +331,8 @@
   }
 }
 
-/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 600px) {
+/* If the screen size is 700px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 700px) {
 
   .jumbotron {
     background-image: url('e.jpg');
@@ -340,7 +340,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-bottom: -10px; */
+    /* margin-bottom: -100px; */
     /* overflow:auto; */
   }
 
