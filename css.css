@@ -626,14 +626,11 @@
 
 
   /* *********************navbar-toggle**********************************/
- .Active{
-   color: #ffffff;
- }
+
   .navbar-custom{
-    opacity: 0.7;
+    /* opacity: 0.7; */
     border: none;
-    /* color: #ffffff; */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    background-color: #25052e;
   }
   
   .navbar-header{
@@ -642,7 +639,7 @@
   }
   
   .navbar-collapse .navbar-right{
-    color: #ffffff;
+    /* color: #ffffff; */
     margin: 20px 0px 0px 0px;
   }
   
@@ -651,11 +648,12 @@
     padding-left: 10px;
   }
   .navbar-custom a{
-  color: #ffffff;
+    color: #ffffff;
+    opacity: 2.8;
   }
   
   .navbar-collapse .navbar-right {
-    color: rgb(231, 226, 226);
+    /* color: rgb(231, 226, 226); */
     margin: 20px 0px 0px 0px;
   }
   
