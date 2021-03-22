@@ -4,7 +4,7 @@
 @media only screen and (min-width: 701px) {
 
   .jumbotron {
-    background-image: url('e.jpg');
+    background-image: url('g.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,13 +73,13 @@
   
   
   .single-cta i {
-    float: left;
+    /* float: left; */
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   .cta-text {
-    padding-left: 15px;
+    padding-left: 20px;
     display: inline-block;
   }
   
@@ -335,7 +335,7 @@
 @media only screen and (max-width: 700px) {
 
   .jumbotron {
-    background-image: url('e.jpg');
+    background-image: url('g.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
