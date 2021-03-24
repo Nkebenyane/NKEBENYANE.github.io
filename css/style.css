@@ -1,8 +1,9 @@
+
 /* If the screen size is 701px or more,*/
 @media only screen and (min-width: 701px) {
 
   .jumbotron {
-    background-image: url('g.jpg');
+    background-image: url('../g.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,7 +191,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
-    box-shadow: 0 0 20px 3px #FBB404;
+    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   
@@ -202,7 +203,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
-    box-shadow: 0 0 20px 3px #FBB404;
+    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   .three h3::before {
@@ -213,7 +214,7 @@
     height: 20px;
     width: 20px;
     background: #FBB404;
-    box-shadow: 0 0 20px 3px #FBB404;
+    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   
@@ -232,8 +233,6 @@
     /* background-image: url('y.jpg'); */
   }
   
-  
-  
   .counter
   {
       background-color: #eaecf0;
@@ -247,7 +246,6 @@
   .counter-count
   {
       font-size: 58px;
-      
       border-radius: 50%;
       position: relative;
       color: #FBB404;
@@ -316,8 +314,7 @@
     object-fit: cover;
   }
   
-  .card {
-    /* margin-top: 10px; */
+  .my-card {
     padding-top: 150px;
     border-bottom: solid #FF9800 3px;
   }
@@ -327,7 +324,7 @@
 @media only screen and (max-width: 700px) {
 
   .jumbotron {
-    background-image: url('g.jpg');
+    background-image: url('../g.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -629,7 +626,6 @@
   /* *********************navbar-toggle**********************************/
 
   .navbar-custom{
-    /* opacity: 0.7; */
     border: none;
     background-color: #25052e;
   }
@@ -650,7 +646,7 @@
   }
   .navbar-custom a{
     color: #ffffff;
-    opacity: 2.8;
+    opacity: none;
   }
   
   .navbar-collapse .navbar-right {
@@ -698,3 +694,70 @@
     -webkit-transform: translateY(-300%) rotate(-45deg);
         transform: translateY(-300%) rotate(-45deg);
     }
+
+    .my-image {
+      width: 100%;
+      max-width: 100px;
+      object-fit: cover;
+    }
+
+
+/* Project Area */ 
+
+.port-image
+{
+    width: 100%;
+    height: 350px;
+    width: 100%;
+    /* max-width: 100px; */
+    object-fit: cover;
+}
+
+.col-md-4, .col-sm-6, .col-xs-12
+{
+    margin-bottom:20px;
+}
+
+.each-item
+{
+    position:relative;
+    overflow:hidden;
+}
+
+.each-item:hover .cap2, .each-item:hover .cap1
+{
+    left:0px;
+}
+
+.cap1
+{
+    position:absolute;
+    width:100%;
+    height:70%;
+    background:rgba(255, 255, 255, 0.5);
+    top:0px;
+    left:-100%;
+    padding:10px;
+    transition: all .5s;
+    color: #333;
+}
+
+.cap2
+{
+    position:absolute;
+    width:100%;
+    height:30%;
+    background:rgba(0, 178, 255, 0.5);
+    bottom:0px;
+    left:100%;
+    padding:10px;
+    transition: all .5s;
+}
+
+
+/* End Project Area */ 
+
+  
+
+
+    
