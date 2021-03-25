@@ -9,5 +9,7 @@ function genPDF(){
         'width': 500,
         'elementHandlers': specialElementHandlers
     });
-    doc.save('Maipato Nkebenyane.pdf');
+    setTimeout(function () {
+        doc.save('Maipato Nkebenyane.pdf');
+    }, 0)
 }
