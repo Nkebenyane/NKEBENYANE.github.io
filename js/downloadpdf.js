@@ -1,13 +1,20 @@
-function genPDF() {
+function getPDF() {
     var doc = new jsPDF();
-
+   
+    // We'll make our own renderer to skip this editor
     var specialElementHandlers = {
-        '#DontPrintPdf': function (element, render) { return true; }
+      '#DontPrintPdf': function(element, renderer){
+        return true;
+      }
+     
     };
-
-    var doc = new jsPDF();
-    doc.fromHTML(document.getElementById("body"), function () {
-        console.log("Callback");
-        doc.save('Maipato Nkebenyane.pdf');
+  
+    // All units are in the set measurement for the document
+    // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+    doc.fromHTML($('#body').get(0), 15, 15, {
+      'width': 170, 
+      'elementHandlers': specialElementHandlers
     });
-}
+  
+    doc.save('Generated.pdf');
+  }
