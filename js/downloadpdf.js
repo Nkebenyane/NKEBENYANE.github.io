@@ -8,9 +8,6 @@ function genPDF(){
     doc.fromHTML($('#body').get(0),20,20,{
         'width': 500,
         'elementHandlers': specialElementHandlers
-        
     });
-    
     doc.save('Maipato Nkebenyane.pdf');
-    
 }
