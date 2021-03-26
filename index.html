@@ -31,7 +31,7 @@
 
 </head>
 
-<body class="canvas_div_pdf">
+<body>
     <div class="jumbotron">
         <!-- navbar -->
         <nav id="DontPrintPdf" class="navbar navbar-inverse  navbar-fixed-top navbar-custom">
@@ -61,67 +61,18 @@
         <div class="container">
             <div class="personal">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-cta">
-                            <i class="fas fa-user"></i>
-                            <div class="cta-text">
-                                <span>Maipato Nkebenyane</span>
-                            </div>
-                        </div>
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <span>081 077 2012</span>
-                            </div>
+                    <div class="col-sm-4 ">
+                        <img class="banner-img" src="img/Profile-pic/me.jpg" alt="Card image cap">
+                        <div class="banner-down-text">
+                            <span>FOLLOW:</span>
+                            <a href="https://github.com/Nkebenyane"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/maipato-nkebenyane"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <span>nkebenyane92@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="single-cta">
-                            <i class="fab fa-github"></i>
-                            <div class="cta-text">
-                                <span>
-                                    <a href="https://github.com/Nkebenyane">https://github.com/Nkebenyane</a>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="single-cta">
-                            <i class="fab fa-linkedin"></i>
-                            <div class="cta-text">
-                                <span>
-                                    <a
-                                        href="https://www.linkedin.com/in/maipato-nkebenyane">https://www.linkedin.com/<span>/maipato-nkebenyane</span></a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="DontPrintPdf" class="text-right download-btn">
-                <a href="resume/Maipato Nkebenyane CV.pdf" download>
-                <button class="btn button"><i class="fa fa-download"></i> Download CV</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Back to top button -->
-    <a id="DontPrintPdf" id="button"></a>
-    <!-- End -->
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3" style="background-color: #ffffff;">
-                <div class="my-card">
-                    <img class="card-img-top image--cover" src="img/Profile-pic/me.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <h3 class="name"><b>Maipato Nkebenyane</b></h3>
-                        <h4 class="title"><b>Junior Software Developer</b></h4>
+                    <div class="col-sm-7">
+                        <h2 class="name"><b>Maipato Nkebenyane</b></h2>
+                        <h3 class="title"><b>Junior Software Developer</b></h3>
+
                         <p>“Reusability is key in reducing bugs and coding quickly. The more I use a piece of code,
                             the
                             more
@@ -129,11 +80,33 @@
                             development
                             time.”
                         </p>
+                        <hr />
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <span>081 077 2012</span>
+                            </div>
+                        </div>
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <span>nkebenyane92@gmail.com</span>
+                            </div>
+                        </div>
+                        <div id="DontPrintPdf" class="download-btn">
+                            <a href="resume/Maipato Nkebenyane CV.pdf" download>
+                                <button class="btn button"><i class="fa fa-download"></i> Download CV</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Back to top button -->
+    <a id="DontPrintPdf" id="button"></a>
+    <!-- End -->
 
     <div id="about-me" class="about-me">
         <div class="row">
@@ -227,6 +200,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Skills section -->
     <div id="skills" class="skills">
         <div class="row">
             <div class="sub-title col-sm-3 left-side">
@@ -293,6 +268,7 @@
         </div>
     </div>
     </div>
+    <!-- End of Skills Section -->
 
     <!--  ======================= Project Area =============================  -->
 
@@ -332,8 +308,6 @@
 
     <script src="js/github_api.js"></script>
     <script src="js/page_movement.js"></script>
-    <script src="js/downloadpdf.js"></script>
-
 </body>
 
 

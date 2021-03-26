@@ -1,18 +1,9 @@
 
-/* If the screen size is 701px or more,*/
-@media only screen and (min-width: 701px) {
-
   .jumbotron {
-    background-image: url('../g.jpg');
-    height: 600px;
+    background-image: url('../img/banner/d.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -100px;
-    padding-top: -20px;
-    
-    /* overflow:auto; */
-    
   }
   
 /* Move to top button */
@@ -52,18 +43,42 @@
     opacity: 1;
     visibility: visible;
   }
-
-  
   .personal {
-    background-color: #FBB404;
-    border-radius: 5px;
+    background: rgba(1, 15, 1, 0.3);
     padding: 30px;
     color: #ffffff;
     overflow:auto;
     margin-top: 40px;
   }
-  
-  
+  .col-sm-7 p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .banner-img{
+    border: solid #fff 3px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+  }
+  .banner-down-text{
+    padding: 20px;
+  }
+  .banner-down-text span{
+    font-size: 25px;
+  }
+  .fab{
+    font-size: 20px;
+    padding: 10px;
+    border: solid #fff 2px;
+    direction: none;
+  }
+  .fab:hover{
+    direction: none;
+    background-color: #FBB404;
+    color: #25052e;
+  }
+
+
   .single-cta i {
     /* float: left; */
     margin-top: 5px;
@@ -106,7 +121,6 @@
 
   .portfolio-filter{
     padding: 20px;
-    /* position: static; */
   }
   
   
@@ -144,7 +158,6 @@
   
   
   .work-experience h3{
-    /* color: #ff5e14; */
     font-weight: bold;
   }
   
@@ -167,7 +180,6 @@
   
   .education h4{
     color: #FBB404;
-    /* font-weight: bold; */
   }
   
   .education h3{
@@ -187,11 +199,9 @@
     content: "";
     position: absolute;
     left: 0;
-    /* top: -10px; */
     height: 20px;
     width: 20px;
     background: #FBB404;
-    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   
@@ -199,22 +209,18 @@
     content: "";
     position: absolute;
     left: 0;
-    /* top: -10px; */
     height: 20px;
     width: 20px;
     background: #FBB404;
-    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   .three h3::before {
     content: "";
     position: absolute;
     left: 0;
-    /* top: -10px; */
     height: 20px;
     width: 20px;
     background: #FBB404;
-    /* box-shadow: 0 0 20px 3px #FBB404; */
     border-radius: 100%;
   }
   
@@ -230,7 +236,6 @@
   
   .projects{
     padding: 40px;
-    /* background-image: url('y.jpg'); */
   }
   
   .counter
@@ -296,9 +301,8 @@
   .name{
     color: #FBB404;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
   }
-  
   
   .card-img-top {
     position: absolute;
@@ -318,312 +322,8 @@
     padding-top: 150px;
     border-bottom: solid #FF9800 3px;
   }
-}
 
-/* If the screen size is 700px or less, set the font-size of <div> to 30px */
-@media only screen and (max-width: 700px) {
-
-  .jumbotron {
-    background-image: url('../g.jpg');
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* margin-bottom: -100px; */
-    /* overflow:auto; */
-  }
-
-  /* Move to top button */
-  #button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-  }
-  #button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
-  #button:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-  #button:active {
-    background-color: #555;
-  }
-  #button.show {
-    opacity: 1;
-    visibility: visible;
-  }
-/* ************************************************* */
-
-
-  
-  .personal {
-    background-color: #FBB404;
-    border-radius: 5px;
-    padding: 30px;
-    color: #ffffff;
-    overflow:auto;
-    margin-top: 40px;
-  }
-  
-  
-  .single-cta i {
-    float: left;
-    margin-top: 5px;
-    font-size: 15px;
-  }
-  
-  .cta-text {
-    padding-left: 15px;
-    display: inline-block;
-  }
-  
-  .cta-text h4 {
-    color: #757575;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
-  
-  .single-cta {
-    padding: 10px;
-  }
-  
-  .cta-text span {
-    font-size: 15px;
-  }
-  
-  .download-btn {
-    padding-top: 20px;
-    margin: 0px auto;
-  }
-  
-  .btn {
-    background-color: #FBB404;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-  
-  .portfolio-filter{
-    padding: 20px;
-    /* position: static; */
-  }
-  
-  
-  .team-content .title{
-    color:#FBB404;
-    font-weight: bold;
-  }
-  
-   .col-sm-3 h2::before {
-    content: "";
-    position: absolute;
-    /* left: 0; */
-    top: -10px;
-    height: 10px;
-    width: 60px;
-    background: #FBB404;
-    border-radius: 5px;
-  }
-  .right-side{
-  padding: 10px;
-  }
-  .left-side{
-    padding: 10px;
-  }
-  
-  .about-me{
-    padding: 40px;
-  }
-  
-  .work-experience{
-    padding: 40px;
-    background-color: #25052e;
-    color: #b9b4b4;
-  }
-  
-  
-  .work-experience h3{
-    /* color: #ff5e14; */
-    font-weight: bold;
-  }
-  
-  .work-experience h4{
-    color: #FBB404;
-    font-weight: bold;
-  }
-  
-  .job-title{
-    padding: 10px;
-  }
-  ul{
-    list-style-type: circle;
-    font-size:15px
-  }
-  
-  .education{
-    padding:40px
-  }
-  
-  .education h4{
-    color: #FBB404;
-    /* font-weight: bold; */
-  }
-  
-  .education h3{
-    color: #777776;
-    font-weight: bold;
-    font-size:large;
-  }
-  
-  .qualifications{
-    border-left: solid #FBB404 1px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    color: #918f8f;
-  }
-  
-  .one h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    /* top: -10px; */
-    height: 20px;
-    width: 20px;
-    background: #FBB404;
-    border-radius: 100%;
-  }
-  
-  .two h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    /* top: -10px; */
-    height: 20px;
-    width: 20px;
-    background: #FBB404;
-    border-radius: 100%;
-  }
-  .three h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    /* top: -10px; */
-    height: 20px;
-    width: 20px;
-    background: #FBB404;
-    border-radius: 100%;
-  }
-  
-  .skills{
-    padding: 40px;
-    background-color: #25052e;
-    color: #b9b4b4;
-  }
-  
-  
-  .projects{
-    padding: 40px;
-  }
-
-  
-  .counter
-  {
-      background-color: #eaecf0;
-      text-align: center;
-  }
-  .employees,.customer,.design,.order
-  {
-      margin-top: 70px;
-      margin-bottom: 70px;
-  }
-  .counter-count
-  {
-      font-size: 58px;
-      
-      border-radius: 50%;
-      position: relative;
-      color: #FBB404;
-      text-align: center;
-      line-height: 92px;
-      width: 92px;
-      height: 92px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      display: inline-block;
-  }
-  
-  .employee-p,.customer-p,.order-p,.design-p
-  {
-      font-size: 15px;
-      color: #b9b4b4;
-  
-      line-height: 34px;
-  }
-  
-  .filter{
-    font-weight: bold;
-    color: #b9b4b4;
-  }
-  
-  .footer{
-    background-color: #25052e;
-    color: #b9b4b4;
-  }
-  .copyright-area{
-    background-color: #25052e;
-    color: #b9b4b4;
-    padding: 25px 0;  
-  }
-  .copyright-text p {
-    margin: 0px;
-    font-size: 14px;
-    color: #878787;
-    text-align: center;
-  }
-  .copyright-text p a{
-    color:#FBB404;
-  }
-  
-  
-  .name{
-    color: #FBB404;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
-  .image--cover {
-    width: 100%;
-    max-width: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
-
-
-  /* *********************navbar-toggle**********************************/
+    /* *********************navbar-toggle**********************************/
 
   .navbar-custom{
     border: none;
