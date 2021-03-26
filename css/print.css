@@ -1,0 +1,39 @@
+@media print {
+    body{
+        /* border: 10px double black; */
+        padding: 3em;
+    }
+    .jumbotron {
+        display: none;
+      }
+    .my-image{
+        width: 15%;
+        max-width: 100px;
+        object-fit: cover;
+      }
+      .card-img-top{
+        width: 30%;
+        max-width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .btn{
+          display: none;
+      }
+
+
+      .education, .experiance, .about-me, .skills{
+        padding-top:90px
+      }
+      footer{
+          display: none;
+      }
+
+.projects{
+    display: none;
+}
+    @page {
+        size: Letter landscape;
+        margin: 3cm;
+   }
+}
